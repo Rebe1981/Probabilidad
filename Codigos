@@ -1,0 +1,247 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "kXV2VtkFsw6i"
+      },
+      "outputs": [],
+      "source": [
+        "from statistics import*\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Lista de calificaciones de probabilodad del grupo a\n",
+        "grupoa=[70, 70, 65, 90, 100, 95, 45, 80, 73, 20, 100, 96]\n",
+        "print(grupoa)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3046VSkbwl4J",
+        "outputId": "f97b896e-748a-4706-8c66-01adfe5dc484"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[70, 70, 65, 90, 100, 95, 45, 80, 73, 20, 100, 96]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#La funcion \"type\" nos devuelve el tipo de dato\n",
+        "type(grupoa)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CcFYstYy2b1Y",
+        "outputId": "2a3133c3-3178-40c2-d293-980b8f250272"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "list"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 32
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#sacar la media con una formula\n",
+        "prom = sum(grupoa) / len(grupoa)\n",
+        "print(prom)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8Nsi_AcWxx1J",
+        "outputId": "5fca8e34-6631-452b-b5dc-2532a060984d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "75.33333333333333\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#\"mean\" se usa para sacar el promedio\n",
+        "prom2= mean(grupoa)\n",
+        "print(prom2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UcUOPqY3yIUJ",
+        "outputId": "375b1a97-4d92-474c-8f65-0e5aff0101a5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "75.33333333333333\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prom3=median(grupoa)\n",
+        "print(prom3)"
+      ],
+      "metadata": {
+        "id": "jRR59rYFym--",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f2900c03-b762-48f5-affc-27387b43e152"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "76.5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "prom4= mode(grupoa)\n",
+        "print(prom4)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Tc94P2KQ4e0o",
+        "outputId": "c73c2d7e-6ae3-4109-e727-09e46c49bff0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "70\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mts=[15.10, 17.20, 14.69, 13.27, 22.15, 18.71, 19.15, 20.65, 15.10, .20]\n",
+        "print(mts)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5d94yAdu4nt_",
+        "outputId": "a52c670d-d3d4-4a51-f482-bcd19110fe4a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[15.1, 17.2, 14.69, 13.27, 22.15, 18.71, 19.15, 20.65, 15.1, 71.2]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#La media se saca con \"mean\"\n",
+        "print(\"El tiempo promedio de los corredores es: \", mean(mts))\n",
+        "#la mediana se saca con \"median\"\n",
+        "print(\"\\nLa mediana es: \",median(mts))\n",
+        "#la moda se saca con \"mode\"\n",
+        "print(\"\\nLa moda del timpo que hacen los corredores es:\", mode(mts))\n",
+        "print(\"\\nLa moda es: \",multimode(mts))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "edvayrYg6G2B",
+        "outputId": "dcf87a38-35a7-419a-e46a-de9cb7fcf67c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "El tiempo promedio de los corredores es:  22.722\n",
+            "\n",
+            "La mediana es:  17.955\n",
+            "\n",
+            "La moda del timpo que hacen los corredores es: 15.1\n",
+            "\n",
+            "La moda es:  [15.1]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "zNzqZ43y9MhH"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
